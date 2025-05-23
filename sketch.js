@@ -85,10 +85,10 @@ function draw() {
     }
     endShape(CLOSE);
 
-    // 繪製右眼的紅色框線
+    // 繪製右眼的藍色框線
     stroke(255, 0, 0); // 紅色線條
     strokeWeight(2);
-    noFill();
+    fill(0, 0, 255, 150); // 半透明藍色填充
     beginShape();
     for (let i = 0; i < rightEyeIndices.length; i++) {
       const idx = rightEyeIndices[i];
